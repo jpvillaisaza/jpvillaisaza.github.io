@@ -2,3 +2,11 @@ title: jpvillaisaza
 
 permalink: pretty
 timezone: America/Bogota
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

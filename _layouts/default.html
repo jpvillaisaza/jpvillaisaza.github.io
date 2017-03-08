@@ -18,34 +18,36 @@
 
   <body>
 
-    <header class="header">
-      <h1>
-        <a href="/">
-          {{ site.title }}
-        </a>
-      </h1>
-    </header>
-
     <div class="container">
-      {{ content }}
-    </div>
 
-    <footer class="footer">
-      <address>
-        <a href="https://www.facebook.com/jpvillaisaza" aria-label="Facebook">
-          <i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i>
-        </a>
-        <a href="https://github.com/jpvillaisaza" aria-label="GitHub">
-          <i class="fa fa-github fa-2x fa-fw" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.instagram.com/jpvillaisaza" aria-label="Instagram">
-          <i class="fa fa-instagram fa-2x fa-fw" aria-hidden="true"></i>
-        </a>
-        <a href="https://twitter.com/jpvillaisaza" aria-label="Twitter">
-          <i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i>
-        </a>
-      </address>
-    </footer>
+      <header class="header">
+        <h1>
+          <a href="/">
+            {{ site.title }}
+          </a>
+        </h1>
+      </header>
+
+      {{ content }}
+
+      <footer class="footer">
+        <address>
+          <a href="https://www.facebook.com/jpvillaisaza" aria-label="Facebook">
+            <i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/jpvillaisaza" aria-label="GitHub">
+            <i class="fa fa-github fa-2x fa-fw" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/jpvillaisaza" aria-label="Instagram">
+            <i class="fa fa-instagram fa-2x fa-fw" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/jpvillaisaza" aria-label="Twitter">
+            <i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i>
+          </a>
+        </address>
+      </footer>
+
+    </div>
 
     {% include scripts.html %}
 
