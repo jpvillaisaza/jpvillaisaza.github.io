@@ -8,9 +8,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    {% unless page.title %}
     <title>
       {{ site.title }}
     </title>
+    {% else %}
+    <title>
+      {{ page.title }} - {{ site.title }}
+    </title>
+    {% endunless %}
 
     {% include links.html %}
 
