@@ -18,7 +18,25 @@
 
   <body>
 
-    {{ content }}
+    <header class="header">
+      <h1>
+        <a href="/">
+          {{ site.title }}
+        </a>
+      </h1>
+    </header>
+
+    <div class="container">
+      {{ content }}
+    </div>
+
+    <footer class="footer">
+      <address>
+        <a href="https://github.com/jpvillaisaza">
+          GitHub
+        </a>
+      </address>
+    </footer>
 
   </body>
 
