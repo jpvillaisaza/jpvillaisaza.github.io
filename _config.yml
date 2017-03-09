@@ -10,3 +10,10 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+exclude:
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
