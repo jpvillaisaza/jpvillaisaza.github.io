@@ -15,6 +15,7 @@ body {
 
 .header {
   border-top: 4px solid darkslategray;
+  margin-bottom: 4px;
   text-align: center;
 }
 
@@ -26,7 +27,11 @@ body {
 /********************************************************************/
 
 .content {
+  border-top: 1px solid darkslategray;
+  border-bottom: 1px solid darkslategray;
   margin: auto;
+  padding-top: 4px;
+  padding-bottom: 4px;
   max-width: 600px;
   width: 100%;
 }
@@ -34,6 +39,7 @@ body {
 /********************************************************************/
 
 .footer {
+  margin-top: 4px;
   text-align: center;
 }
 
