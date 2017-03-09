@@ -8,11 +8,13 @@ html {
 
 body {
   font-family: Lora, serif;
+  margin: 0;
 }
 
 /********************************************************************/
 
 .header {
+  border-top: 4px solid darkslategray;
   text-align: center;
 }
 
@@ -25,13 +27,8 @@ body {
 
 .content {
   margin: auto;
+  max-width: 600px;
   width: 100%;
-}
-
-@media (min-width: 500px) {
-  .content {
-    max-width: 750px;
-  }
 }
 
 /********************************************************************/
