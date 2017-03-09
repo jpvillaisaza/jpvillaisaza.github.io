@@ -12,19 +12,6 @@ body {
 
 /********************************************************************/
 
-.container {
-  margin: auto;
-  width: 100%;
-}
-
-@media (min-width: 500px) {
-  .container {
-    max-width: 750px;
-  }
-}
-
-/********************************************************************/
-
 .header {
   text-align: center;
 }
@@ -32,6 +19,19 @@ body {
 .header a {
   color: inherit;
   text-decoration: none;
+}
+
+/********************************************************************/
+
+.content {
+  margin: auto;
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .content {
+    max-width: 750px;
+  }
 }
 
 /********************************************************************/
