@@ -53,3 +53,9 @@ body {
 .post-meta {
   color: darkslategray;
 }
+
+/********************************************************************/
+
+.error {
+  text-align: center;
+}
