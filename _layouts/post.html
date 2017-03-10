@@ -19,6 +19,9 @@ layout: default
         {{ page.tags | sort | join: ", " }}
       </div>
       {% endif %}
+      {% if jekyll.environment == "development" %}
+      {{ content | strip_html | number_of_words | append: " words" }}
+      {% endif %}
     </div>
   </header>
   <div class="post-content">
