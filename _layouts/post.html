@@ -27,4 +27,7 @@ layout: default
   <footer class="post-footer">
 
   </footer>
+  {% if jekyll.environment == "production" and page.comments %}
+  {% include comments.html %}
+  {% endif %}
 </article>

@@ -9,6 +9,7 @@ defaults:
       path: ""
       type: "posts"
     values:
+      comments: true
       layout: "post"
 
 exclude:
