@@ -12,6 +12,8 @@ body {
 }
 
 code {
+  color: #0e3232;
+  font-family: "Ubuntu Mono", monospace;
   white-space: pre-wrap;
 }
 
