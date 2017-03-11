@@ -28,7 +28,9 @@ layout: default
     {{ content }}
   </div>
   <footer class="post-footer">
-
+    <div class="post-share">
+      {% include pocket.html %}
+    </div>
   </footer>
   {% if jekyll.environment == "production" and page.comments %}
   {% include comments.html %}
