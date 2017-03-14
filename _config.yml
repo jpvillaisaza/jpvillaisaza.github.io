@@ -20,4 +20,5 @@ exclude:
   - vendor/
 
 gems:
+  - jekyll-feed
   - jekyll-sitemap
