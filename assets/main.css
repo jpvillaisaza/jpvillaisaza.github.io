@@ -8,14 +8,23 @@ html {
 
 body {
   font-family: Lora, serif;
+  font-size: 1.063em;
   margin: 0;
 }
 
 code {
   color: #0e3232;
   font-family: "Ubuntu Mono", monospace;
-  white-space: pre-wrap;
+  white-space: pre;
 }
+
+pre {
+  overflow: auto;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 1.667em; }
+h3 { font-size: 1.5em; }
 
 /********************************************************************/
 
@@ -41,7 +50,6 @@ code {
   padding-left: 4px;
   padding-right: 4px;
   max-width: 600px;
-  width: 100%;
 }
 
 /********************************************************************/
@@ -72,6 +80,7 @@ code {
 
 .post-meta {
   color: darkslategray;
+  font-size: 90%;
   text-align: center;
 }
 

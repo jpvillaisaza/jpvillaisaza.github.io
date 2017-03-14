@@ -20,7 +20,9 @@ layout: default
       </div>
       {% endif %}
       {% if jekyll.environment == "development" %}
-      {{ content | strip_html | number_of_words | append: " words" }}
+      <div class="post-words">
+        {{ content | strip_html | number_of_words | append: " words" }}
+      </div>
       {% endif %}
     </div>
   </header>
