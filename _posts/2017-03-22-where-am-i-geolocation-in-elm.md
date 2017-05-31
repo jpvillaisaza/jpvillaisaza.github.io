@@ -352,7 +352,7 @@ change. If it doesn't, try switching tabs... Or moving.
 Finally, we can compile the Elm file to JavaScript:
 
 ```
-$ elm make WhereAmI.js --output whereami.js
+$ elm make WhereAmI.elm --output whereami.js
 ```
 
 And then embed it in HTML:
