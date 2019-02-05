@@ -39,6 +39,18 @@ h4 { font-size: 1.111em; }
   text-decoration: none;
 }
 
+nav {
+  margin: auto;
+  max-width: 600px;
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      display: inline-block;
+    }
+  }
+}
+
 /********************************************************************/
 
 .content {
