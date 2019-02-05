@@ -19,6 +19,6 @@ exclude:
   - README.md
   - vendor/
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
