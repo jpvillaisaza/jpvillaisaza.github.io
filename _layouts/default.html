@@ -7,17 +7,7 @@
 
     <meta name="author" content="Juan Pedro Villa Isaza">
 
-    {% unless page.title %}
-    <title>
-      {{ site.title }}
-    </title>
-    {% else %}
-    <title>
-      {{ page.title }} - {{ site.title }}
-    </title>
-    {% endunless %}
-
-    <link rel="canonical" href="https://jpvillaisaza.co/">
+    {% seo %}
 
     <link rel="icon" href="/favicon.ico">
 
