@@ -6,7 +6,7 @@ layout: default
 <h2>
   Posts
 </h2>
-<ul>
+<ul class="posts">
   {% for post in site.posts %}
   <li>
     <a href="{{ post.url }}">
@@ -21,7 +21,7 @@ layout: default
 
 <section>
   <h3>Blog posts</h3>
-  <ul>
+  <ul class="posts">
     <li>
       <a href="{{ sb }}news/reverse-reverse-theorem-proving-with-idris">
 	Reverse, Reverse: Theorem proving with Idris
@@ -84,7 +84,7 @@ layout: default
     </li>
   </ul>
   <h3>Tutorials</h3>
-  <ul>
+  <ul class="posts">
     <li>
       <a href="{{ sb }}tutorials/haskell/csv-encoding-decoding/">
 	CSV Encoding and Decoding in Haskell with Cassava

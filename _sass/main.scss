@@ -26,8 +26,6 @@ h2 { font-size: 1.667em; }
 h3 { font-size: 1.5em; }
 h4 { font-size: 1.111em; }
 
-/********************************************************************/
-
 .header {
   border-top: 4px solid darkslategray;
   margin-bottom: 4px;
@@ -40,14 +38,13 @@ h4 { font-size: 1.111em; }
 }
 
 nav {
-  margin: auto;
-  max-width: 600px;
   text-align: center;
   ul {
-    list-style-type: none;
-    padding-left: 0;
+    list-style: none;
+    padding: 0;
     li {
       display: inline-block;
+      margin: 0 5px;
       a {
         color: inherit;
         text-decoration: none;
@@ -56,9 +53,7 @@ nav {
   }
 }
 
-/********************************************************************/
-
-.content {
+main {
   border-top: 1px solid darkslategray;
   border-bottom: 1px solid darkslategray;
   margin: auto;
@@ -69,7 +64,10 @@ nav {
   max-width: 600px;
 }
 
-/********************************************************************/
+.posts {
+  line-height: 150%;
+  list-style: none;
+}
 
 .footer {
   margin-top: 4px;
@@ -83,13 +81,9 @@ nav {
   text-decoration: none;
 }
 
-/********************************************************************/
-
 .about {
   text-align: center;
 }
-
-/********************************************************************/
 
 .post-title {
   text-align: center;
@@ -104,8 +98,6 @@ nav {
 .post-share {
   text-align: center;
 }
-
-/********************************************************************/
 
 .error {
   text-align: center;
