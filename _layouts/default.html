@@ -40,21 +40,11 @@
     </main>
     <footer class="footer">
       <address>
-        <a href="https://www.facebook.com/jpvillaisaza" aria-label="Facebook">
-          <i class="fab fa-facebook-f fa-2x fa-fw" aria-hidden="true"></i>
-        </a>
-        <a href="https://github.com/jpvillaisaza" aria-label="GitHub">
-          <i class="fab fa-github fa-2x fa-fw" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.instagram.com/jpvillaisaza" aria-label="Instagram">
-          <i class="fab fa-instagram fa-2x fa-fw" aria-hidden="true"></i>
-        </a>
-        <a href="https://stackoverflow.com/story/jpvillaisaza" aria-label="Stack Overflow">
-          <i class="fab fa-stack-overflow fa-2x fa-fw" aria-hidden="true"></i>
-        </a>
-        <a href="https://twitter.com/jpvillaisaza" aria-label="Twitter">
-          <i class="fab fa-twitter fa-2x fa-fw" aria-hidden="true"></i>
-        </a>
+        {% for item in site.data.address %}
+          <a href="{{ item.url }}" aria-label="{{ item.title }}">
+            <i class="{{ item.icon }} fa-2x fa-fw" aria-hidden="true"></i>
+          </a>
+        {% endfor %}
       </address>
     </footer>
     {% if jekyll.environment == "production" %}
