@@ -26,21 +26,13 @@
     </header>
     <nav>
       <ul>
-        <li>
-          <a href="/about/">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="/posts/">
-            Posts
-          </a>
-        </li>
-        <li>
-          <a href="/vita/">
-            Vita
-          </a>
-        </li>
+        {% for item in site.data.nav %}
+          <li>
+            <a href="{{ item.url }}">
+              {{ item.title }}
+            </a>
+          </li>
+        {% endfor %}
       </ul>
     </nav>
     <main>
