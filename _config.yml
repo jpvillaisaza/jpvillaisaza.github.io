@@ -3,6 +3,10 @@ title: jpvillaisaza
 permalink: pretty
 timezone: America/Bogota
 
+collections:
+  recipes:
+    output: true
+
 defaults:
   -
     scope:
@@ -11,6 +15,12 @@ defaults:
     values:
       comments: true
       layout: "post"
+  -
+    scope:
+      path: ""
+      type: "recipes"
+    values:
+      layout: "recipe"
 
 exclude:
   - circle.yml
