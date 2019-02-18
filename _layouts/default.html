@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang }}">
   <head>
     <meta charset="utf-8">
 
@@ -17,7 +17,7 @@
     {% feed_meta %}
   </head>
   <body>
-    <header class="header">
+    <header class="site">
       <h1>
         <a href="/">
           {{ site.title }}
@@ -38,7 +38,7 @@
     <main>
       {{ content }}
     </main>
-    <footer class="footer">
+    <footer class="site">
       <address>
         {% for item in site.data.address %}
           <a href="{{ item.url }}" aria-label="{{ item.title }}">
