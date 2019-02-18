@@ -31,4 +31,20 @@ layout: default
   </div>
   <footer class="post-footer">
   </footer>
+  <nav class="page">
+    <div>
+      {% if page.previous %}
+        <a href="{{ page.previous.url }}">
+          Previous
+        </a>
+      {% endif %}
+    </div>
+    <div>
+      {% if page.next %}
+        <a href={{ page.next.url }}>
+          Next
+        </a>
+      {% endif %}
+    </div>
+  </nav>
 </article>
