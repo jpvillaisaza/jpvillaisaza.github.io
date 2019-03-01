@@ -1,0 +1,11 @@
+{% if include.posts.size > 0 %}
+  <ul class="posts">
+    {% for post in include.posts %}
+      <li>
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
