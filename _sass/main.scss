@@ -57,16 +57,15 @@ nav.site {
 }
 
 main {
-  margin: auto;
+  margin: 0 auto;
   border-top: medium solid darkslategray;
   border-bottom: medium solid darkslategray;
-  padding: 4px;
+  padding: 0 0.5em;
   max-width: 600px;
 }
 
 footer.site {
-  margin-top: 4px;
-  padding: 20px 0;
+  padding: 2em 0;
   text-align: center;
 
   a {
@@ -76,6 +75,7 @@ footer.site {
 }
 
 nav.page {
+  padding: 1em 0;
   display: flex;
   justify-content: space-between;
 }
