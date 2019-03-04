@@ -2,85 +2,16 @@
 layout: default
 ---
 
-<div>
+<section>
   <h2>
     Posts
   </h2>
   {% include posts.html posts=site.posts %}
-</div>
-
-{% assign sb = "https://www.stackbuilders.com/" %}
+</section>
 
 <section>
-  <h3>Blog posts</h3>
-  <ul class="posts">
-    <li>
-      <a href="{{ sb }}news/reverse-reverse-theorem-proving-with-idris">
-	Reverse, Reverse: Theorem proving with Idris
-      </a>
-    </li>
-    <li>
-      <a href="{{ sb }}news/a-quickcheck-tutorial-generators">
-	A QuickCheck Tutorial: Generators
-      </a>
-    </li>
-    <li>
-      <a href="{{ sb }}news/the-hang-of-elm-hangman-and-functional-programming-with-elm">
-	The Hang of Elm: Hangman and functional programming with Elm
-      </a>
-    </li>
-    <li>
-      <a href="{{ sb }}news/errors-and-exceptions-in-haskell">
-	Errors and Exceptions in Haskell
-      </a>
-    </li>
-    <li>
-      <a href="{{ sb }}news/dr-hakyll-create-a-github-page-with-hakyll-and-circleci">
-	Dr. Hakyll: Create a GitHub page with Hakyll and CircleCI
-      </a>
-    </li>
-    <li>
-      <a href="{{ sb }}news/obverse-versus-reverse-benchmarking-in-haskell-with-criterion">
-	Obverse versus Reverse: Benchmarking in Haskell with Criterion
-      </a>
-    </li>
-    <li>
-      <a href="{{ sb }}news/how-to-program-it">
-	How to Program It
-      </a>
-    </li>
-    <li>
-      <a href="{{ sb }}news/hangman-imperative-functional-programming">
-	Hangman: Imperative functional programming
-      </a>
-    </li>
-    <li>
-      <a href="{{ sb }}news/pattern-matching-wot-s-uh-the-deal">
-	Pattern Matching: Wot's... Uh the Deal?
-      </a>
-    </li>
-    <li>
-      <a href="{{ sb }}news/the-notes-of-ghc">
-	The Notes of GHC
-      </a>
-    </li>
-    <li>
-      <a href="{{ sb }}news/obverse-and-reverse">
-	Obverse and Reverse
-      </a>
-    </li>
-    <li>
-      <a href="{{ sb }}news/the-weak-and-the-strong-functors">
-	The Weak and the Strong: Functors
-      </a>
-    </li>
-  </ul>
-  <h3>Tutorials</h3>
-  <ul class="posts">
-    <li>
-      <a href="{{ sb }}tutorials/haskell/csv-encoding-decoding/">
-	CSV Encoding and Decoding in Haskell with Cassava
-      </a>
-    </li>
-  </ul>
+  <h2>Blog posts</h2>
+  {% include posts.html posts=site.data.stackbuilders.posts %}
+  <h2>Tutorials</h2>
+  {% include posts.html posts=site.data.stackbuilders.tutorials %}
 </section>
