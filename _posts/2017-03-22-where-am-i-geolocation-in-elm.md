@@ -4,6 +4,11 @@ author: Juan Pedro Villa Isaza
 tags: elm programming
 ---
 
+[Elm][elm] is a simple and functional language that compiles to
+JavaScript. These are my notes about getting started with Elm using a
+small but complete application to get the current location of a device
+and update it based on movement.
+
 {% assign elm-packages = "http://package.elm-lang.org/packages/" %}
 
 {% assign elm-lang = "elm-lang/" | prepend: elm-packages %}
@@ -22,11 +27,6 @@ tags: elm programming
 {% assign program = "Platform#Program" | prepend: core %}
 {% assign result = "Result#Result" | prepend: core %}
 {% assign task = "Task#Task" | prepend: core %}
-
-[Elm][elm] is a simple and functional language that compiles to
-JavaScript. These are my notes about getting started with Elm using a
-small but complete application to get the current location of a device
-and update it based on movement.
 
 First of all, we have to [install Elm][elm-install]. There are several
 ways to do that---I used the [npm package][elm-npm]:

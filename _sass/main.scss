@@ -94,9 +94,12 @@ ul.posts {
     h3 {
       font-size: 18px;
     }
-    div.date {
+    .date {
       color: darkslategray;
       font-size: 90%;
+    }
+    .excerpt {
+      margin-top: 0;
     }
   }
 }

@@ -13,6 +13,11 @@
               {{ post.date | date: "%Y-%m-%d" }}
             </time>
           </div>
+          {% if include.excerpt and post.excerpt %}
+            <p class="excerpt">
+              {{ post.excerpt | strip_html }}
+            </p>
+          {% endif %}
         </div>
       </li>
     {% endfor %}

@@ -6,12 +6,12 @@ layout: default
   <h2>
     Posts
   </h2>
-  {% include posts.html posts=site.posts %}
+  {% include posts.html posts=site.posts excerpt=false %}
 </section>
 
 <section>
   <h2>Blog posts</h2>
-  {% include posts.html posts=site.data.stackbuilders.posts %}
+  {% include posts.html posts=site.data.stackbuilders.posts excerpt=false %}
   <h2>Tutorials</h2>
-  {% include posts.html posts=site.data.stackbuilders.tutorials %}
+  {% include posts.html posts=site.data.stackbuilders.tutorials excerpt=false %}
 </section>
