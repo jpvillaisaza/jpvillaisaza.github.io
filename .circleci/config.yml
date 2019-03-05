@@ -13,4 +13,5 @@ jobs:
           command: |
             bundle exec htmlproofer ./_site \
               --check-favicon \
-              --check-html
+              --check-html \
+              --only-4xx
