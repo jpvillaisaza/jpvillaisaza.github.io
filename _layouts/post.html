@@ -3,33 +3,33 @@ layout: default
 ---
 
 <article class="post" lang="{{ page.lang | default: site.lang }}">
-  <header class="post-header">
-    <h2 class="post-title">
+  <header class="page">
+    <h2>
       {{ page.title }}
     </h2>
-    <div class="post-meta">
-      <div class="post-author">
+    <div class="meta">
+      <div>
         {{ page.author }}
       </div>
-      <div class="post-date">
+      <div>
         {{ page.date | date: "%B %e, %Y" }}
       </div>
       {% if page.tags %}
-      <div class="post-tags">
-        {{ page.tags | sort | join: ", " }}
-      </div>
+        <div>
+          {{ page.tags | sort | join: ", " }}
+        </div>
       {% endif %}
       {% if jekyll.environment == "development" %}
-      <div class="post-words">
-        {{ content | strip_html | number_of_words | append: " words" }}
-      </div>
+        <div>
+          {{ content | strip_html | number_of_words | append: " words" }}
+        </div>
       {% endif %}
     </div>
   </header>
-  <div class="post-content">
+  <div class="page">
     {{ content }}
   </div>
-  <footer class="post-footer">
+  <footer class="page">
   </footer>
   <nav class="page">
     <div>

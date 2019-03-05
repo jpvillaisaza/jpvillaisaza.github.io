@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lora|Ubuntu+Mono");
 
-/********************************************************************/
-
 html {
 }
 
@@ -12,6 +10,13 @@ body {
   font-family: Lora, serif;
   font-size: 1.063em;
 }
+
+h1, h3 { margin: 0; }
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 1.667em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.111em; }
 
 code {
   color: #0e3232;
@@ -25,13 +30,6 @@ pre {
   padding: 4px 0;
   overflow: auto;
 }
-
-h1, h3 { margin: 0; }
-
-h1 { font-size: 2.5em; }
-h2 { font-size: 1.667em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.111em; }
 
 header.site {
   margin: 0;
@@ -80,10 +78,20 @@ footer.site {
   }
 }
 
+header.page {
+  text-align: center;
+}
+
 nav.page {
   padding: 1em 0;
   display: flex;
   justify-content: space-between;
+}
+
+div.page {
+}
+
+footer.page {
 }
 
 ul.posts {
@@ -94,34 +102,17 @@ ul.posts {
     h3 {
       font-size: 18px;
     }
-    .date {
-      color: darkslategray;
-      font-size: 90%;
-    }
     .excerpt {
       margin-top: 0;
     }
   }
 }
 
-.about {
-  text-align: center;
-}
-
-.post-title {
-  text-align: center;
-}
-
-.post-meta {
+.meta {
   color: darkslategray;
   font-size: 90%;
-  text-align: center;
 }
 
-.post-share {
-  text-align: center;
-}
-
-.error {
+.center {
   text-align: center;
 }
