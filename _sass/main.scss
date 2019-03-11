@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lora|Ubuntu+Mono");
+@import url("https://fonts.googleapis.com/css?family=Lora");
 
 $color-01: darkslategray;
 $color-02: gray;
@@ -29,7 +29,7 @@ h4 { font-size: 1.111em; }
 
 code {
   color: $color-03;
-  font-family: "Ubuntu Mono", monospace;
+  font-family: monospace;
   white-space: pre;
 }
 
