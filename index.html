@@ -8,3 +8,20 @@ layout: default
   </h2>
   {% include posts.html posts=site.posts excerpt=true %}
 </section>
+
+<section>
+  <h2>
+    Projects
+  </h2>
+  {% if site.data.projects.size > 0 %}
+  <ul>
+    {% for project in site.data.projects %}
+    <li>
+      <a href="{{ project.url }}">
+        {{ project.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</section>
