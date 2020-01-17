@@ -28,6 +28,7 @@ exclude:
   - circle.yml
   - Gemfile
   - Gemfile.lock
+  - LICENSE.md
   - README.md
   - vendor/
 
