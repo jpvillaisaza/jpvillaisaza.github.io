@@ -37,6 +37,9 @@ posts:
     url: https://www.stackbuilders.com/news/the-weak-and-the-strong-functors
 
 tutorials:
+  - date: 2020-04-16
+    title: "Nonsense! Getting started with Reason and ReasonReact"
+    url: https://www.stackbuilders.com/tutorials/reason/nonsense-getting-started-with-reason-and-reason-react/
   - date: 2016-05-31
     title: "CSV Encoding and Decoding in Haskell with Cassava"
     url: https://www.stackbuilders.com/tutorials/haskell/csv-encoding-decoding/
