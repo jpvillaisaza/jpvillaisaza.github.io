@@ -5,15 +5,6 @@ permalink: pretty
 lang: en
 timezone: America/Bogota
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: true
-      layout: "post"
-
 exclude:
   - circle.yml
   - Gemfile

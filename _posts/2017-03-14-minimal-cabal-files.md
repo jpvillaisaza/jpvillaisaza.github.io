@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Minimal Cabal Files
 author: Juan Pedro Villa Isaza
 tags: haskell programming
