@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
 
     {% feed_meta %}
-
-    <script src="https://kit.fontawesome.com/7bdeacfec1.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="site">
@@ -38,13 +36,9 @@
       {{ content }}
     </main>
     <footer class="site">
-      <address>
-        {% for item in site.data.address %}
-          <a href="{{ item.url }}" aria-label="{{ item.title }}">
-            <i class="{{ item.icon }} fa-2x fa-fw" aria-hidden="true"></i>
-          </a>
-        {% endfor %}
-      </address>
+      <a href="/feed.xml">
+        RSS
+      </a>
     </footer>
   </body>
 </html>
