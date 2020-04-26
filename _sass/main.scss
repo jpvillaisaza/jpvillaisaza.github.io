@@ -82,6 +82,25 @@ main {
 footer.site {
   padding: 2em 0;
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "."
+    "feed"
+    ".";
+}
+
+@media (min-width: 900px) {
+  footer.site {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". feed .";
+  }
+}
+
+.feed {
+  grid-area: feed;
 }
 
 /* */
