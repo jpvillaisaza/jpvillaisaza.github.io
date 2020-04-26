@@ -84,19 +84,14 @@ footer.site {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "."
     "feed"
-    ".";
+    "logo";
 }
 
-@media (min-width: 900px) {
-  footer.site {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: ". feed .";
-  }
+.logo {
+  grid-area: logo;
 }
 
 .feed {
