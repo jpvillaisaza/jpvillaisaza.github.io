@@ -42,21 +42,17 @@ pre {
 
 /* */
 
-header.site {
-  margin: 0;
-  padding: 1em 0;
-  display: flex;
-  h1 {
-    margin: auto;
-  }
+header.site-header {
+  padding: 1rem 0;
+  display: grid;
+  place-items: center;
   a {
     color: inherit;
     text-decoration: none;
   }
 }
 
-nav.site {
-  text-align: center;
+nav.site-nav {
   ul {
     list-style: none;
     padding: 0;
@@ -79,7 +75,7 @@ main {
   max-width: 600px;
 }
 
-footer.site {
+footer.site-footer {
   padding: 2em 0;
   text-align: center;
   display: grid;
