@@ -88,16 +88,16 @@ footer.site {
   grid-template-rows: auto auto auto;
   grid-template-areas:
     "site-search"
-    "feed"
-    "logo";
+    "site-feed"
+    "site-logo";
 }
 
-.logo {
-  grid-area: logo;
+.site-feed {
+  grid-area: site-feed;
 }
 
-.feed {
-  grid-area: feed;
+.site-logo {
+  grid-area: site-logo;
 }
 
 .site-search {
