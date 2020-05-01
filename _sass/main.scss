@@ -83,9 +83,11 @@ footer.site {
   padding: 2em 0;
   text-align: center;
   display: grid;
+  grid-row-gap: 1rem;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
+    "site-search"
     "feed"
     "logo";
 }
@@ -96,6 +98,12 @@ footer.site {
 
 .feed {
   grid-area: feed;
+}
+
+.site-search {
+  grid-area: site-search;
+  display: grid;
+  place-items: center;
 }
 
 /* */
