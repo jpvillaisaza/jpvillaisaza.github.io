@@ -5,6 +5,26 @@ redirect_from: /cv
 ---
 
 <section>
+  <header>
+    <h2>Experience</h2>
+  </header>
+  <ul>
+    {% for item in site.data.resume.experience %}
+    <li>
+      <div>{{ item.title }}</div>
+      <div>
+        <a href="{{ item.company.site }}">
+          {{ item.company.name }}
+        </a>
+      </div>
+      <div>{{ item.location }}</div>
+      <div>{{ item.dates.from }}–{{ item.dates.to }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section>
 
   <header>
     <h2>Open source</h2>
