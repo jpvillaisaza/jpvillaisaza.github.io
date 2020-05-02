@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="post" lang="{{ page.lang | default: site.lang }}">
-  <header class="page">
+  <header class="post-header">
     <h2>
       {{ page.title }}
     </h2>
@@ -29,9 +29,9 @@ layout: default
   <div>
     {{ content }}
   </div>
-  <footer class="page">
+  <footer class="post-footer">
   </footer>
-  <nav class="page">
+  <nav class="post-nav">
     <div>
       {% if page.previous %}
         <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">

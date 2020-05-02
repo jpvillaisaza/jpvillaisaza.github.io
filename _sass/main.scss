@@ -6,9 +6,6 @@ $color-03: #0e3232;
 
 /* */
 
-html {
-}
-
 body {
   font-family: Lora, serif;
   font-size: 17px;
@@ -138,16 +135,16 @@ footer.site-footer {
 
 /* */
 
-header.page {
+header.post-header {
   text-align: center;
 }
 
-nav.page {
+nav.post-nav {
   display: flex;
   justify-content: space-between;
 }
 
-footer.page {
+footer.post-footer {
 }
 
 /* */
