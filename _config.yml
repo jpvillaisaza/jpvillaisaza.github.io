@@ -6,7 +6,6 @@ lang: en
 timezone: America/Bogota
 
 exclude:
-  - circle.yml
   - Gemfile
   - Gemfile.lock
   - LICENSE.md
