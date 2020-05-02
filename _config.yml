@@ -10,7 +10,7 @@ exclude:
   - Gemfile.lock
   - LICENSE.md
   - README.md
-  - vendor/
+  - vendor
 
 plugins:
   - jekyll-feed
