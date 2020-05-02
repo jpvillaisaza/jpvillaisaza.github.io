@@ -173,3 +173,28 @@ ul.posts {
 .center {
   text-align: center;
 }
+
+/* */
+
+.social-links {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.social-links-item {
+  border-radius: 3px;
+  border: thin solid $color-02;
+  min-height: 48px;
+  display: grid;
+  place-items: center;
+}
+
+@media (min-width: 512px) {
+  .social-links {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
