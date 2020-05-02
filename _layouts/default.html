@@ -14,31 +14,33 @@
     {% feed_meta %}
   </head>
   <body>
-    <header class="site-header">
-      <h1>
-        <a href="/">
-          {{ site.title }}
-        </a>
-      </h1>
-      <nav class="site-nav">
-        <ul>
-          {% for item in site.data.nav %}
-            <li>
-              <a href="{{ item.url }}">
-                {{ item.title }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </nav>
-    </header>
-    <main>
-      {{ content }}
-    </main>
-    <footer class="site-footer">
-      {% include site-search.html %}
-      {% include site-logo.html %}
-      {% include site-feed.html %}
-    </footer>
+    <div class="site">
+      <header class="site-header">
+        <h1>
+          <a href="/">
+            {{ site.title }}
+          </a>
+        </h1>
+        <nav class="site-nav">
+          <ul>
+            {% for item in site.data.nav %}
+              <li>
+                <a href="{{ item.url }}">
+                  {{ item.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </header>
+      <main>
+        {{ content }}
+      </main>
+      <footer class="site-footer">
+        {% include site-search.html %}
+        {% include site-logo.html %}
+        {% include site-feed.html %}
+      </footer>
+    </div>
   </body>
 </html>
