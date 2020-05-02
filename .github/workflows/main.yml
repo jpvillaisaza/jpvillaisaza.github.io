@@ -1,4 +1,4 @@
-name: CI
+name: ci
 
 on:
   push:
@@ -11,13 +11,13 @@ on:
 jobs:
   build:
     runs-on: macos-latest
-
     steps:
-    - uses: actions/checkout@v2
-
+    - name: checkout
+      uses: actions/checkout@v2
     - run: bundle check || bundle install      
     - run: bundle exec jekyll build
-    - run: |
+    - name: htmlproofer
+      run: |
         bundle exec htmlproofer _site \
           --check-favicon \
           --check-html \
