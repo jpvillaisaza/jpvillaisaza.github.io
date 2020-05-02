@@ -12,11 +12,11 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
-    - name: checkout
+    - name: Run checkout
       uses: actions/checkout@v2
     - run: bundle check || bundle install      
     - run: bundle exec jekyll build
-    - name: htmlproofer
+    - name: Run htmlproofer
       run: |
         bundle exec htmlproofer _site \
           --check-favicon \
