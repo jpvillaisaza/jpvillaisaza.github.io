@@ -1,18 +1,12 @@
-- icon: fab fa-facebook-f
-  title: Facebook
+- title: Facebook
   url: https://www.facebook.com/jpvillaisaza
-- icon: fab fa-github
-  title: GitHub
+- title: GitHub
   url: https://github.com/jpvillaisaza
-- icon: fab fa-instagram
-  title: Instagram
+- title: Instagram
   url: https://www.instagram.com/jpvillaisaza
-- icon: fab fa-linkedin-in
-  title: LinkedIn
+- title: LinkedIn
   url: https://www.linkedin.com/in/jpvillaisaza/
-- icon: fab fa-stack-overflow
-  title: Stack Overflow
+- title: Stack Overflow
   url: https://stackoverflow.com/story/jpvillaisaza
-- icon: fab fa-twitter
-  title: Twitter
+- title: Twitter
   url: https://twitter.com/jpvillaisaza
