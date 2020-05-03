@@ -6,11 +6,20 @@ redirect_from: /cv
 
 <section>
   <header>
-    <h2>Experience</h2>
+    <h2>Technologies</h2>
   </header>
   <ul>
+    <li>Haskell</li>
+  </ul>
+</section>
+
+<section>
+  <header>
+    <h2>Experience</h2>
+  </header>
+  <ul class="magazine">
     {% for item in site.data.resume.experience %}
-    <li>
+    <li class="magazine-item">
       <div>{{ item.title }}</div>
       <div>
         <a href="{{ item.company.site }}">
@@ -25,11 +34,9 @@ redirect_from: /cv
 </section>
 
 <section>
-
   <header>
     <h2>Open source</h2>
   </header>
-
   <ul>
     <li>
       <a href="https://github.com/jpvillaisaza/licensor">
@@ -44,8 +51,6 @@ redirect_from: /cv
   </ul>
 
 </section>
-
-{% assign sb = "https://www.stackbuilders.com/" %}
 
 <section>
   <header>
