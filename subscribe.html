@@ -6,3 +6,31 @@ title: Subscribe
 <a href="/feed.xml">
   Feed
 </a>
+<button id="copy">
+  Copy
+</button>
+<span id="result" role="alert"></span>
+
+{% assign feed = "feed.xml" | absolute_url %}
+
+<script>
+  window.addEventListener("load", _ => {
+    const copyButton = document.getElementById("copy");
+    copyButton.addEventListener("click", fn);
+  })
+  fn = _ => {
+    const res = document.getElementById("result");
+    copy().then(result => {
+      res.innerText = result;
+      setTimeout(_ => res.innerText = "", 2000);
+    })
+  };
+  copy = async () => {
+    try {
+      await navigator.clipboard.writeText("{{ feed }}");
+      return "Copied!"
+    } catch (err) {
+      return err
+    }
+  };
+</script>
