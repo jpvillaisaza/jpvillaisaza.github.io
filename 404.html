@@ -5,14 +5,20 @@ title: Page not found
 permalink: /404.html
 ---
 
-<div class="center">
-  <span>
+{% assign report = "https://github.com/jpvillaisaza/jpvillaisaza.github.io/issues/new" %}
+
+<section class="center">
+  <div>
     :(
-  </span>
+  </div>
   <p>
-    “Ow, fuck!”
+    <q>Ow, fuck!</q>
   </p>
   <p>
     Page not found
   </p>
-</div>
+  <p>
+    If you think this is an error, please <a href="{{ report }}">submit an
+    issue</a>!
+  </p>
+</section>
