@@ -11,6 +11,18 @@ body {
   line-height: 1.5;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  a {
+    color: skyblue;
+    opacity: 0.64;
+  }
+}
+
 /* */
 
 h1, h2, h3, h4 { margin: 0 }
@@ -25,6 +37,13 @@ h4 { font-size: 1.111em; }
 code {
   color: $color-03;
   white-space: pre;
+}
+
+@media (prefers-color-scheme: dark) {
+  code {
+    color: white;
+    opacity: 0.64;
+  }
 }
 
 pre {
@@ -163,6 +182,12 @@ ul.posts {
 .meta {
   color: $color-01;
   font-size: 90%;
+}
+
+@media (prefers-color-scheme: dark) {
+  .meta {
+    color: white;
+  }
 }
 
 .center {
