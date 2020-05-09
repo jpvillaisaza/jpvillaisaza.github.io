@@ -29,8 +29,8 @@ and update it based on movement.
 {% assign result = "Result#Result" | prepend: core %}
 {% assign task = "Task#Task" | prepend: core %}
 
-First of all, we have to [install Elm][elm-install]. There are several
-ways to do that---I used the [npm package][elm-npm]:
+First of all, we have to install Elm. There are several ways to do that---I used
+the [npm package][elm-npm]:
 
 ```
 $ npm install --global elm
