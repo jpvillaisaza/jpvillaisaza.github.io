@@ -100,11 +100,11 @@ footer.site-footer {
   grid-template-rows: auto auto auto;
   grid-template-areas:
     "site-search"
-    "site-feed";
+    "site-footer-nav";
 }
 
-.site-feed {
-  grid-area: site-feed;
+.site-footer-nav {
+  grid-area: site-footer-nav;
   text-align: center;
 }
 
@@ -123,9 +123,9 @@ footer.site-footer {
   footer.site-footer {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "site-search site-feed";
+      "site-search site-footer-nav";
   }
-  .site-feed {
+  .site-footer-nav {
     text-align: right;
   }
   .site-search {
