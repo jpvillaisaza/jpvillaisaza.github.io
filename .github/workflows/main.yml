@@ -16,15 +16,14 @@ jobs:
     steps:
     - name: Run checkout
       uses: actions/checkout@v2
-    - continue-on-error: true
-      run: bundle check
+    - run: bundle lock
     - uses: actions/cache@v1
       with:
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
         path: vendor/bundle
         restore-keys: |
           ${{ runner.os }}-gems-
-    - run: bundle install
+    - run: bundle check || bundle install
     - run: bundle exec jekyll build
     - name: Run htmlproofer
       run: |
