@@ -2,12 +2,13 @@
   {% include site-search.html %}
   <nav class="site-footer-nav site-nav">
     <ul>
+      {% for page in site.data.nav.other %}
       <li>
-        <a href="/contact">Contact</a>
+        <a href="{{ page.url }}">
+          {{ page.title }}
+        </a>
       </li>
-      <li>
-        <a href="/subscribe">Subscribe</a>
-      </li>
+      {% endfor %}
     </ul>
   </nav>
 </footer>

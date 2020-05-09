@@ -1,0 +1,10 @@
+main:
+  - title: About
+    url: /about
+  - title: Posts
+    url: /posts
+other:
+  - title: Contact
+    url: /contact
+  - title: Subscribe
+    url: /subscribe
