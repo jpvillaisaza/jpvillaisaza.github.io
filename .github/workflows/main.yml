@@ -23,7 +23,7 @@ jobs:
         path: vendor/bundle
         restore-keys: |
           ${{ runner.os }}-gems-
-    - run: bundle check || bundle install
+    - run: bundle check || bundle install
     - run: bundle exec jekyll build
     - name: Run htmlproofer
       run: |
