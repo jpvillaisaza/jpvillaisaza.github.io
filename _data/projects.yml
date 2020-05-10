@@ -1,10 +1,21 @@
 - title: Boggle
   url: https://boggle.jpvillaisaza.co/
+  featured: true
+- title: Flipism
+  url: https://flipism.jpvillaisaza.co/
+  featured: false
 - title: Hangman
   url: https://hangman.jpvillaisaza.co/
+  featured: true
 - title: Licensor
   url: https://github.com/jpvillaisaza/licensor
+  featured: true
+- title: TRM
+  url: https://trm.jpvillaisaza.co/
+  featured: false
 - title: Where Am I?
   url: https://whereami.jpvillaisaza.co/
+  featured: true
 - title: Zenith
   url: https://zenith.jpvillaisaza.co/
+  featured: true

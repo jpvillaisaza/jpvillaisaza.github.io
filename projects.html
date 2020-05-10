@@ -1,13 +1,7 @@
 ---
 layout: default
+title: Projects
 ---
-
-<section>
-  <h2>
-    Posts
-  </h2>
-  {% include posts.html posts=site.posts excerpt=true %}
-</section>
 
 <section>
   <h2>
@@ -15,13 +9,11 @@ layout: default
   </h2>
   <ul>
     {% for project in site.data.projects %}
-    {% if project.featured %}
     <li>
       <a href="{{ project.url }}">
         {{ project.title }}
       </a>
     </li>
-    {% endif %}
     {% endfor %}
   </ul>
 </section>
