@@ -12,7 +12,17 @@ title: Projects
     <li>
       <a href="{{ project.url }}">
         {{ project.title }}
-      </a>
+      </a> (<a href="{{ project.source }}">Code</a>)
+      {% if project.languages %}
+      <div>
+        {{ project.languages | join: ", " }}
+      </div>
+      {% endif %}
+      {% if project.description %}
+      <p>
+        {{ project.description }}
+      </p>
+      {% endif %}
     </li>
     {% endfor %}
   </ul>

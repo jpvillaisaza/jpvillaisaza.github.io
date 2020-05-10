@@ -1,21 +1,41 @@
 - title: Boggle
+  languages: Elm
+  source: https://github.com/jpvillaisaza/boggle
   url: https://boggle.jpvillaisaza.co/
   featured: true
 - title: Flipism
+  languages: JavaScript
+  source: https://github.com/jpvillaisaza/flipism
   url: https://flipism.jpvillaisaza.co/
   featured: false
 - title: Hangman
+  languages: Elm
+  source: https://github.com/jpvillaisaza/hangman
   url: https://hangman.jpvillaisaza.co/
   featured: true
 - title: Licensor
-  url: https://github.com/jpvillaisaza/licensor
+  description: A license compatibility helper for Haskell.
+  languages: Haskell
+  source: https://github.com/jpvillaisaza/licensor
+  url: https://licensor.jpvillaisaza.co/
   featured: true
 - title: TRM
+  description:
+    Current exchange rate from United States dollars (USD) to Colombian pesos
+    (COP).
+  languages: JavaScript
+  source: https://github.com/jpvillaisaza/trm
   url: https://trm.jpvillaisaza.co/
   featured: false
 - title: Where Am I?
+  description: Geolocation in JavaScript
+  languages: JavaScript
+  source: https://github.com/jpvillaisaza/whereami
   url: https://whereami.jpvillaisaza.co/
   featured: true
 - title: Zenith
+  description: Fuel economy calculator.
+  languages: Elm
+  source: https://github.com/jpvillaisaza/zenith
   url: https://zenith.jpvillaisaza.co/
   featured: true
