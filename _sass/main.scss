@@ -161,9 +161,6 @@ nav.post-nav {
   justify-content: space-between;
 }
 
-footer.post-footer {
-}
-
 /* */
 
 ul.posts {
@@ -196,9 +193,14 @@ ul.posts {
 
 /* */
 
+.list {
+  display: grid;
+  gap: 1em;
+}
+
 ul.magazine {
   display: grid;
-  grid-row-gap: 1rem;
+  gap: 1em;
   grid-template-columns: 1fr;
   list-style-type: none;
   padding-left: 0;
@@ -206,7 +208,7 @@ ul.magazine {
 
 ul.cards {
   display: grid;
-  grid-gap: 1rem;
+  gap: 1em;
   grid-template-columns: 1fr 1fr;
   list-style-type: none;
   padding-left: 0;
