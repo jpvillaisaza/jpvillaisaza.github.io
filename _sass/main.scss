@@ -193,22 +193,24 @@ ul.posts {
 
 /* */
 
-.list {
+%list {
   display: grid;
-  gap: 1em;
+  gap: 1em
+}
+
+.list {
+  @extend %list;
 }
 
 ul.magazine {
-  display: grid;
-  gap: 1em;
+  @extend %list;
   grid-template-columns: 1fr;
   list-style-type: none;
   padding-left: 0;
 }
 
 ul.cards {
-  display: grid;
-  gap: 1em;
+  @extend %list;
   grid-template-columns: 1fr 1fr;
   list-style-type: none;
   padding-left: 0;
