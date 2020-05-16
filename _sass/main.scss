@@ -140,6 +140,11 @@ footer.site-footer {
   place-items: center;
 }
 
+.search-box {
+  align-items: center;
+  display: flex;
+}
+
 @media (min-width: 512px) {
   footer.site-footer {
     grid-template-columns: 1fr 1fr;
@@ -161,6 +166,7 @@ header.post-header {
 }
 
 nav.post-nav {
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
