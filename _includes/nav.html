@@ -1,0 +1,16 @@
+<nav class="site-nav">
+  <ul>
+    {%- for item in include.items %}
+    <li>
+      {%- if item.url == page.url %}
+      {% assign current = true %}
+      {% else %}
+      {% assign current = false %}
+      {%- endif %}
+      <a href="{{ item.url }}" {% if current %}class="current"{% endif %}>
+        {{ item.title }}
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+</nav>

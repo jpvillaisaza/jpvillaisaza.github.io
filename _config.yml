@@ -5,6 +5,18 @@ permalink: pretty
 lang: en
 timezone: America/Bogota
 
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
 exclude:
   - Gemfile
   - Gemfile.lock

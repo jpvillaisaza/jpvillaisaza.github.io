@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Where Am I? Geolocation in Elm
 author: Juan Pedro Villa Isaza
 tags: elm programming

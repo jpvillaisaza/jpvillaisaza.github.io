@@ -17,39 +17,19 @@
   <body>
     <div class="site">
       <header class="site-header">
-        <h1>
+        <h1 class="site-title">
           <a href="/">
             {{ site.title }}
           </a>
         </h1>
-        <nav class="site-nav">
-          <ul>
-            {% for page in site.data.nav.main %}
-            <li>
-              <a href="{{ page.url }}">
-                {{ page.title }}
-              </a>
-            </li>
-            {% endfor %}
-          </ul>
-        </nav>
+        {% include nav.html items=site.data.nav.main %}
       </header>
       <main>
         {{ content }}
       </main>
       <footer class="site-footer">
         {% include site-search.html %}
-        <nav class="site-footer-nav site-nav">
-          <ul>
-            {% for page in site.data.nav.other %}
-            <li>
-              <a href="{{ page.url }}">
-                {{ page.title }}
-              </a>
-            </li>
-            {% endfor %}
-          </ul>
-        </nav>
+        {% include nav.html items=site.data.nav.other %}
       </footer>
     </div>
   </body>
