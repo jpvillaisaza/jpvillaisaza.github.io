@@ -3,13 +3,15 @@ layout: default
 title: Subscribe
 ---
 
-<a href="/feed.xml">
-  Feed (Atom)
-</a>
-<button id="copy">
-  Copy
-</button>
-<span id="result" role="alert"></span>
+<section class="section section--center">
+  <a href="/feed.xml">
+    Feed (Atom)
+  </a>
+  <button id="copy">
+    Copy
+  </button>
+  <span id="result" role="alert"></span>
+</section>
 
 {% assign feed = "feed.xml" | absolute_url %}
 

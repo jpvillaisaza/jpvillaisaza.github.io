@@ -191,45 +191,42 @@ ul.posts {
   }
 }
 
-.center {
-  text-align: center;
+/* */
+
+.section {
+  &--center {
+    text-align: center;
+  }
 }
 
 /* */
 
-%list {
-  display: grid;
-  gap: 1em
-}
-
 .list {
-  @extend %list;
-}
-
-ul.magazine {
-  @extend %list;
-  grid-template-columns: 1fr;
-  list-style-type: none;
-  padding-left: 0;
-}
-
-ul.cards {
-  @extend %list;
-  grid-template-columns: 1fr 1fr;
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.cards-item {
-  border-radius: 3px;
-  border: thin solid $color-02;
-  min-height: 48px;
   display: grid;
-  place-items: center;
+  gap: 1em;
+  &--magazine {
+    grid-template-columns: 1fr;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  &--cards {
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      border-radius: 3px;
+      border: thin solid $color-02;
+      min-height: 48px;
+      display: grid;
+      place-items: center;
+    }
+  }
 }
 
 @media (min-width: 512px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+  .list {
+    &--cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }

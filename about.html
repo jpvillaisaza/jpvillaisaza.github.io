@@ -16,7 +16,7 @@ title: About
   <header>
     <h2>Experience</h2>
   </header>
-  <ul class="magazine">
+  <ul class="list list--magazine">
     {% for item in site.data.about.experience %}
     <li class="magazine-item">
       <div>{{ item.title }}</div>
@@ -75,9 +75,9 @@ title: About
 
 <section>
   <h2>Social Links</h2>
-  <ul class="cards">
+  <ul class="list list--cards">
     {% for item in site.data.address %}
-    <li class="cards-item">
+    <li>
       <a href="{{ item.url }}">
         {{ item.title }}
       </a>
