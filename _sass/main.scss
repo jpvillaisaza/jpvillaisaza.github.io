@@ -6,6 +6,10 @@ $color-03: #0e3232;
 
 /* */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Lora, serif;
   line-height: 1.5;
