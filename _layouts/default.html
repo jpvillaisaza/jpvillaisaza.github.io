@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang }}">
+<html lang="en">
   <head>
     <meta charset="utf-8">
 
@@ -37,7 +37,20 @@
       <main>
         {{ content }}
       </main>
-      {% include site-footer.html %}
+      <footer class="site-footer">
+        {% include site-search.html %}
+        <nav class="site-footer-nav site-nav">
+          <ul>
+            {% for page in site.data.nav.other %}
+            <li>
+              <a href="{{ page.url }}">
+                {{ page.title }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </footer>
     </div>
   </body>
 </html>
