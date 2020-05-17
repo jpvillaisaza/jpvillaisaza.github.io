@@ -4,25 +4,21 @@ layout: default
 
 <article class="post" lang="{{ page.lang | default: site.lang }}">
   <header class="post-header">
-    <h2>
-      {{ page.title }}
-    </h2>
-    <div class="meta">
-      <div>
-        {{ page.author }}
-      </div>
+    <h2>{{ page.title }}</h2>
+    <div class="post-meta">
+      <div>{{ page.author }}</div>
       <div>
         {{ page.date | date: "%B %e, %Y" }}
       </div>
       {% if page.tags %}
-        <div>
-          {{ page.tags | sort | join: ", " }}
-        </div>
+      <div>
+        {{ page.tags | sort | join: ", " }}
+      </div>
       {% endif %}
       {% if jekyll.environment == "development" %}
-        <div>
-          {{ content | strip_html | number_of_words | append: " words" }}
-        </div>
+      <div>
+        {{ content | strip_html | number_of_words | append: " words" }}
+      </div>
       {% endif %}
     </div>
   </header>
@@ -30,21 +26,21 @@ layout: default
     {{ content }}
   </div>
   <footer class="post-footer">
-  </footer>
-  <nav class="post-nav">
-    <div>
-      {% if page.previous %}
+    <nav class="post-nav">
+      <div>
+        {% if page.previous %}
         <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">
           Previous
         </a>
-      {% endif %}
-    </div>
-    <div>
-      {% if page.next %}
+        {% endif %}
+      </div>
+      <div>
+        {% if page.next %}
         <a href="{{ page.next.url }}" title="{{ page.next.title }}">
           Next
         </a>
-      {% endif %}
-    </div>
-  </nav>
+        {% endif %}
+      </div>
+    </nav>
+  </footer>
 </article>

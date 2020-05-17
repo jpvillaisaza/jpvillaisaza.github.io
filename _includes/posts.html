@@ -1,25 +1,25 @@
 {% if include.posts.size > 0 %}
   <ul class="list list--magazine posts">
     {% for post in include.posts %}
-      <li>
-        <div>
-          <h3>
-            <a href="{{ post.url }}">
-              {{ post.title }}
-            </a>
-          </h3>
-          <div class="meta">
-            <time>
-              {{ post.date | date: "%Y-%m-%d" }}
-            </time>
-          </div>
-          {% if include.excerpt and post.excerpt %}
-            <p class="excerpt">
-              {{ post.excerpt | strip_html }}
-            </p>
-          {% endif %}
+    <li>
+      <div>
+        <h3 class="post-title">
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h3>
+        <div class="post-meta">
+          <time>
+            {{ post.date | date: "%Y-%m-%d" }}
+          </time>
         </div>
-      </li>
+        {% if include.excerpt and post.excerpt %}
+        <p class="post-excerpt">
+          {{ post.excerpt | strip_html }}
+        </p>
+        {% endif %}
+      </div>
+    </li>
     {% endfor %}
   </ul>
 {% endif %}
