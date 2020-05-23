@@ -4,6 +4,11 @@ $color-01: darkslategray;
 $color-02: gray;
 $color-03: #0e3232;
 
+$color-coffee: #4b3621;
+$color-wine: #722f37;
+
+$color-04: mix($color-coffee, $color-wine);
+
 /* */
 
 * {

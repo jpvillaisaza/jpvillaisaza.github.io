@@ -2,7 +2,7 @@
   <style>
     .d { fill: #4b3621 }
     @media (prefers-color-scheme: dark) {
-      .d { fill: #d2691e; }
+      .d { fill: #722f37; }
     }
   </style>
   <circle cx="210" cy="210" r="210" fill="#A5B2BE" />
