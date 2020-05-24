@@ -1,11 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 420 420">
   <style>
-    .d { fill: #4b3621 }
     @media (prefers-color-scheme: dark) {
       .d { fill: #722f37; }
     }
   </style>
-  <circle cx="210" cy="210" r="210" fill="#A5B2BE" />
-  <circle cx="210" cy="210" r="140" fill="white" />
-  <circle class="d" cx="210" cy="210" r="131.25" />
+  <circle cx="210" cy="210" r="210" fill="#a5b2be"/>
+  <circle class="d" cx="210" cy="210" r="140" fill="#4b3621" stroke="#fff" stroke-width="7.75"/>
 </svg>
