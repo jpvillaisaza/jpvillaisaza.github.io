@@ -230,7 +230,7 @@ main {
 }
 
 .button {
-  background-color: lightslategray;
+  background-color: scale-color(lightslategray, $lightness: -50%);
   border: none;
   border-radius: 8px;
   color: #ffffff;
