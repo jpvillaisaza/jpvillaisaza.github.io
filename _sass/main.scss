@@ -228,3 +228,27 @@ main {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.button {
+  background-color: lightslategray;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  min-height: 44px;
+  min-width: 10ch;
+  padding: 0.25em 0.75em;
+  &--circle {
+    border-radius: 50%;
+    font-size: 90%;
+    min-width: 44px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .button {
+    background-color: #989898;
+  }
+}
