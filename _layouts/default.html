@@ -11,27 +11,27 @@
     <link rel="icon" href="/favicon.svg">
     <link rel="alternate icon" href="/favicon.ico">
 
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&display=swap">
+    <link rel="stylesheet" href="{{ "/assets/css/jpvillaisaza.css?v=" | append: site.github.build_revision | relative_url }}">
 
     {% feed_meta %}
   </head>
   <body>
-    <div class="site">
-      <header class="site-header">
-        <h1 class="site-title">
-          <a href="/">
-            {{ site.title }}
-          </a>
-        </h1>
-        {% include nav.html items=site.data.nav.main %}
-      </header>
-      <main>
-        {{ content }}
-      </main>
-      <footer class="site-footer">
-        {% include site-search.html %}
-        {% include nav.html items=site.data.nav.other %}
-      </footer>
-    </div>
+    <header>
+      <h1 class="site-title">
+        <a href="/">
+          {{ site.title }}
+        </a>
+      </h1>
+      {% include nav.html items=site.data.nav.main %}
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      {% include site-search.html %}
+      {% include nav.html items=site.data.nav.other %}
+    </footer>
   </body>
 </html>
