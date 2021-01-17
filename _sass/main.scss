@@ -59,10 +59,10 @@ pre {
 body {
   margin: 0 auto;
   max-width: 40rem;
+  padding: 1.5rem;
 }
 
 body > header {
-  padding: 1rem 0.5em;
   display: grid;
   grid-template-columns: 1fr;
   .site-title {
@@ -89,11 +89,11 @@ body > header {
 main {
   border-top: medium solid $color-01;
   border-bottom: medium solid $color-01;
-  padding: 1em 0.5em;
+  padding-top: 1.5rem;
 }
 
 body > footer {
-  padding: 2em 0;
+  padding-top: 2rem;
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
