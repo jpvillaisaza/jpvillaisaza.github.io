@@ -1,6 +1,6 @@
 ---
 title: Minimal Cabal Files
-author: Juan Pedro Villa Isaza
+author: J. P. Villa Isaza
 tags: haskell programming
 ---
 
