@@ -2,40 +2,10 @@
 title: Subscribe
 ---
 
-<section class="section section--center">
-  <a href="/feed.xml">
-    Feed (Atom)
-  </a>
-  <button class="button" id="copy">
-    Copy
-  </button>
-  <span id="result" role="alert"></span>
+<section class="section">
+  <p>
+    <a href="/feed.xml">
+      Feed (Atom)
+    </a>
+  </p>
 </section>
-
-{% assign feed = "feed.xml" | absolute_url %}
-
-<script>
-  window.addEventListener("load", _ => {
-    const copyButton = document.getElementById("copy");
-    copyButton.addEventListener("click", fn);
-  })
-  fn = _ => {
-    const res = document.getElementById("result");
-    copy().then(result => {
-      res.innerText = result;
-      setTimeout(_ => res.innerText = "", 2000);
-    })
-  };
-  copy = async () => {
-    try {
-      if (navigator.clipboard) {
-        await navigator.clipboard.writeText("{{ feed }}");
-        return "Copied!";
-      } else {
-        throw ("Error!")
-      }
-    } catch (err) {
-      return "Error!";
-    }
-  };
-</script>
