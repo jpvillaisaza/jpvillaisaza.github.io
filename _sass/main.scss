@@ -182,26 +182,6 @@ body > footer {
     list-style-type: none;
     padding-left: 0;
   }
-  &--cards {
-    grid-template-columns: 1fr 1fr;
-    list-style-type: none;
-    padding-left: 0;
-    li {
-      border-radius: 3px;
-      border: thin solid $color-02;
-      min-height: 48px;
-      display: grid;
-      place-items: center;
-    }
-  }
-}
-
-@media (min-width: 512px) {
-  .list {
-    &--cards {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
 }
 
 .button {
