@@ -4,14 +4,9 @@ $color-03: #0e3232;
 
 $color-coffee: #4b3621;
 $color-wine: #722f37;
-
 $color-04: mix($color-coffee, $color-wine);
 
-/* */
-
-* {
-  box-sizing: border-box;
-}
+$color-05: #954721; // rgb(149, 71, 33)
 
 body {
   font-family: Lora, serif;
@@ -70,7 +65,7 @@ body > header {
   }
 }
 
-.site-nav {
+body > header > nav, body > footer > nav {
   text-align: center;
   ul {
     list-style: none;
@@ -110,7 +105,7 @@ body > footer {
       text-align: left;
     }
   }
-  .site-nav {
+  body > header > nav, body > footer > nav {
     text-align: right;
   }
   body > footer {
@@ -166,10 +161,8 @@ body > footer {
 
 /* */
 
-.section {
-  &--center {
-    text-align: center;
-  }
+.center {
+  text-align: center;
 }
 
 /* */
