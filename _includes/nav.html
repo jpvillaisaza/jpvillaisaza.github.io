@@ -1,14 +1,15 @@
 <nav>
   <ul>
-    {%- for item in include.items %}
+    {% assign pages = site.pages | where: "nav", true %}
+    {%- for page in pages %}
     <li>
-      {%- if item.url == page.url %}
+      {%- if page.url == page.url %}
       {% assign current = true %}
       {% else %}
       {% assign current = false %}
       {%- endif %}
-      <a href="{{ item.url }}" {% if current %}class="current"{% endif %}>
-        {{ item.title }}
+      <a href="{{ page.url }}" {% if current %}class="current"{% endif %}>
+        {{ page.title }}
       </a>
     </li>
     {%- endfor %}
