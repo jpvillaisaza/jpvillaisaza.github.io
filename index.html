@@ -1,13 +1,31 @@
 ---
 ---
 
-<section class="section">
+<section>
   <h2>Posts</h2>
-  {% include posts.html posts=site.posts excerpt=true %}
+  {% for post in site.posts %}
+    <article>
+      <h3 class="post-title">
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h3>
+      <div class="post-meta">
+        <time>
+          {{ post.date | date: "%Y-%m-%d" }}
+        </time>
+      </div>
+      {% if post.excerpt %}
+      <p class="post-excerpt">
+        {{ post.excerpt | strip_html }}
+      </p>
+      {% endif %}
+    </article>
+  {% endfor %}
   <p><a href="/feed.xml">Feed (Atom)</a></p>
 </section>
 
-<section class="section">
+<section>
   <h2>Projects</h2>
   <ul>
     {% for project in site.data.projects %}
@@ -22,7 +40,7 @@
   </ul>
 </section>
 
-<section class="section">
+<section>
   <h2>Contact</h2>
   <p>
     You can send me an email to jp at jpvillaisaza dot co.

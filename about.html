@@ -3,20 +3,16 @@ title: About
 nav: true
 ---
 
-<section class="section">
-  <header>
-    <h2>Technologies</h2>
-  </header>
+<section>
+  <h2>Technologies</h2>
   <ul>
     <li>Haskell</li>
   </ul>
 </section>
 
-<section class="section">
-  <header>
-    <h2>Experience</h2>
-  </header>
-  <ul class="list list--magazine">
+<section>
+  <h2>Experience</h2>
+  <ul class="list">
     {% for item in site.data.about.experience %}
     <li>
       <div>{{ item.title }}</div>
@@ -32,10 +28,8 @@ nav: true
   </ul>
 </section>
 
-<section class="section">
-  <header>
-    <h2>Open source</h2>
-  </header>
+<section>
+  <h2>Open source</h2>
   <ul>
     <li>
       <a href="https://github.com/jpvillaisaza/licensor">
@@ -50,10 +44,8 @@ nav: true
   </ul>
 </section>
 
-<section class="section">
-  <header>
-    <h2>Publications</h2>
-  </header>
+<section>
+  <h2>Publications</h2>
   <h3>Undergraduate project</h3>
   <ul>
     <li>
@@ -72,7 +64,7 @@ nav: true
   </ul>
 </section>
 
-<section class="section">
+<section>
   <h2>Social Links</h2>
   <ul>
     {% for item in site.data.address %}
