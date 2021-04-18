@@ -18,7 +18,7 @@ nav: true
   </header>
   <ul class="list list--magazine">
     {% for item in site.data.about.experience %}
-    <li class="magazine-item">
+    <li>
       <div>{{ item.title }}</div>
       <div>
         <a href="{{ item.company.site }}">
@@ -74,7 +74,7 @@ nav: true
 
 <section class="section">
   <h2>Social Links</h2>
-  <ul class="list">
+  <ul>
     {% for item in site.data.address %}
     <li>
       <a href="{{ item.url }}">
