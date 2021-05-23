@@ -6,7 +6,8 @@
     <meta name="color-scheme" content="light dark">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% seo %}
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+{% seo title=false %}
 
     <link rel="icon" href="/favicon.svg">
     <link rel="alternate icon" href="/favicon.ico">
