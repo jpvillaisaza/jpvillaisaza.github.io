@@ -5,13 +5,10 @@ nav: true
 
 <section>
   <h2>Posts</h2>
-  {% include posts.html posts=site.posts excerpt=true %}
+  {% include posts.html posts=site.posts %}
   <p><a href="/feed.xml">Feed (Atom)</a></p>
-</section>
-
-<section>
-  <h2>Blog posts</h2>
-  {% include posts.html posts=site.data.stackbuilders.posts excerpt=false %}
-  <h2>Tutorials</h2>
-  {% include posts.html posts=site.data.stackbuilders.tutorials excerpt=false %}
+  <section>
+    <h3>Posts (External)</h3>
+    {% include posts.html posts=site.data.posts.external %}
+  </section>
 </section>
