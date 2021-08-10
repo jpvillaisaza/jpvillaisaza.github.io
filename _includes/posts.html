@@ -7,7 +7,7 @@
       {{ post.title }}
     </a>
     <div class="post-meta">
-      <time>
+      <time datetime="{{ post.date | date: '%F' }}">
         {{ post.date | date: "%B %e, %Y" }}
       </time>
     </div>
