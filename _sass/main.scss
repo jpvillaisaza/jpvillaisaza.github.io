@@ -17,8 +17,10 @@ $color-05: #954721; // rgb(149, 71, 33)
 body {
   font-family: Bitter, serif;
   font-size: 1rem;
-  margin: 0;
-  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 70ch;
+  line-height: 1.6;
+  padding: 2ch;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,12 +58,6 @@ pre {
 }
 
 /* */
-
-body {
-  margin: 0 auto;
-  max-width: 40rem;
-  padding: 1.5rem;
-}
 
 body > header {
   display: grid;
