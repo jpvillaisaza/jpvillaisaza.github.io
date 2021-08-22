@@ -23,12 +23,6 @@ body {
   padding: 2ch;
 }
 
-@media (prefers-color-scheme: dark) {
-  a {
-    color: skyblue;
-  }
-}
-
 /* */
 
 h1 { margin: 0; font-size: 2.00rem; }
@@ -41,13 +35,6 @@ h4 { margin: 0; font-size: 1.00rem; }
 code {
   color: $color-03;
   white-space: pre;
-}
-
-@media (prefers-color-scheme: dark) {
-  code {
-    color: white;
-    opacity: 0.64;
-  }
 }
 
 pre {
@@ -138,12 +125,6 @@ body > footer {
   font-size: 90%;
 }
 
-@media (prefers-color-scheme: dark) {
-  .post-meta {
-    color: white;
-  }
-}
-
 /* */
 
 .center {
@@ -158,4 +139,19 @@ body > footer {
   gap: 1em;
   list-style-type: none;
   padding-left: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: skyblue;
+  }
+
+  .post-meta {
+    color: white;
+  }
+
+  code {
+    color: white;
+    opacity: 0.64;
+  }
 }
