@@ -29,16 +29,17 @@
       <nav>
         <ul>
           {% assign pages = site.pages | where: "nav", true %}
-          {%- for page in pages %}
+          {%- for site_page in pages %}
           <li>
-            {%- if page.url == page.url %}
-            {% assign current = true %}
-            {% else %}
-            {% assign current = false %}
-            {%- endif %}
-            <a href="{{ page.url }}" {% if current %}class="current"{% endif %}>
-              {{ page.title }}
+            {%- if site_page.url == page.url %}
+            <a href="{{ site_page.url }}" aria-current="page">
+              {{ site_page.title }}
             </a>
+            {% else %}
+            <a href="{{ site_page.url }}">
+              {{ site_page.title }}
+            </a>
+            {%- endif %}
           </li>
           {%- endfor %}
         </ul>
