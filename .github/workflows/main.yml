@@ -17,10 +17,10 @@ jobs:
     runs-on: macos-latest
     steps:
     - name: Run checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - run: bundle config path vendor/bundle
     - run: bundle lock
-    - uses: actions/cache@v1
+    - uses: actions/cache@v3
       with:
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
         path: vendor/bundle
