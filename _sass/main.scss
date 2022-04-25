@@ -1,12 +1,8 @@
-$color-01: darkslategray;
-$color-02: gray;
-$color-03: #0e3232;
-
-$color-coffee: #4b3621;
-$color-wine: #722f37;
-$color-04: mix($color-coffee, $color-wine);
-
-$color-05: #954721; // rgb(149, 71, 33)
+:root {
+  --color-01: darkslategray;
+  --color-02: gray;
+  --color-03: #0e3232;
+}
 
 *,
 *::before,
@@ -33,13 +29,13 @@ h4 { margin: 0; font-size: 1.00rem; }
 /* */
 
 code {
-  color: $color-03;
+  color: var(--color-03);
   white-space: pre;
 }
 
 pre {
-  border-top: thin solid $color-02;
-  border-bottom: thin solid $color-02;
+  border-top: thin solid var(--color-02);
+  border-bottom: thin solid var(--color-02);
   padding: 4px 0;
   overflow: auto;
 }
@@ -76,8 +72,8 @@ body > header > nav {
 }
 
 main {
-  border-top: medium solid $color-01;
-  border-bottom: medium solid $color-01;
+  border-top: medium solid var(--color-01);
+  border-bottom: medium solid var(--color-01);
   padding-top: 1.5rem;
 }
 
@@ -126,7 +122,7 @@ body > footer {
 }
 
 .post-meta {
-  color: $color-01;
+  color: var(--color-01);
   font-size: 90%;
 }
 
