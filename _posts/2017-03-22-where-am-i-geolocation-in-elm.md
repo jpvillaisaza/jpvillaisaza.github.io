@@ -1,6 +1,6 @@
 ---
 title: Where Am I? Geolocation in Elm
-author: J. P. Villa Isaza
+author: Juan Pedro Villa Isaza
 tags: elm programming
 ---
 
