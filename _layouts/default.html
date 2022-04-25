@@ -30,16 +30,16 @@
       </h1>
       <nav>
         <ul>
-          {% assign pages = site.pages | where: "nav", true %}
-          {%- for site_page in pages %}
+          {%- assign nav_pages = site.pages | where: "nav", true %}
+          {%- for nav_page in nav_pages %}
           <li>
-            {%- if site_page.url == page.url %}
-            <a href="{{ site_page.url }}" aria-current="page">
-              {{ site_page.title }}
+            {%- if nav_page.url == page.url %}
+            <a href="{{ nav_page.url }}" aria-current="page">
+              {{ nav_page.title }}
             </a>
-            {% else %}
-            <a href="{{ site_page.url }}">
-              {{ site_page.title }}
+            {%- else %}
+            <a href="{{ nav_page.url }}">
+              {{ nav_page.title }}
             </a>
             {%- endif %}
           </li>
