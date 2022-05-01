@@ -142,18 +142,3 @@ body > footer {
   list-style-type: none;
   padding-left: 0;
 }
-
-@media (prefers-color-scheme: dark) {
-  a {
-    color: skyblue;
-  }
-
-  .post-meta {
-    color: white;
-  }
-
-  code {
-    color: white;
-    opacity: 0.64;
-  }
-}
