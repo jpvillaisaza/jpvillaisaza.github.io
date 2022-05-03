@@ -48,13 +48,15 @@ pre {
   grid-template-columns: 1fr;
 }
 
-.site-title {
-  text-align: center;
-}
-
 .site-title > a {
   color: inherit;
   text-decoration: none;
+}
+
+.site-title {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.25ch;
 }
 
 .site-nav {
@@ -99,9 +101,6 @@ main {
 @media (min-width: 512px) {
   .site-header {
     grid-template-columns: 1fr 1fr;
-  }
-  .site-title {
-    text-align: left;
   }
   .site-nav {
     text-align: right;
