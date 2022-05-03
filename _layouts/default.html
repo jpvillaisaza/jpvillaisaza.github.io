@@ -20,13 +20,13 @@
     {% feed_meta %}
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <h1 class="site-title">
         <a href="/">
           {{ site.title }}
         </a>
       </h1>
-      <nav>
+      <nav class="site-nav">
         <ul>
           {%- assign nav_pages = site.pages | where: "nav", true %}
           {%- for nav_page in nav_pages %}
@@ -45,13 +45,32 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="page-content">
       {{ content }}
     </main>
-    <footer>
+    <footer class="site-footer">
       <svg viewBox="0 0 24 24" width="44" height="44">
         <circle cx="12" cy="12" r="10" fill="#954721" />
       </svg>
+      <div class="social-links">
+        <ul class="social-links-list">
+          <li>
+            <a href="https://github.com/jpvillaisaza">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/jpvillaisaza/">
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/jpvillaisaza">
+              Twitter
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
