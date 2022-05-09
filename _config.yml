@@ -24,6 +24,8 @@ exclude:
   - README.md
   - vendor
 
+include: [_pages]
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
