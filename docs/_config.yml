@@ -17,13 +17,6 @@ defaults:
     values:
       layout: "post"
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.md
-  - README.md
-  - vendor
-
 include: [_pages]
 
 plugins:
