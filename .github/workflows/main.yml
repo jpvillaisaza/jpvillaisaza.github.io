@@ -31,10 +31,4 @@ jobs:
           ${{ runner.os }}-gems-
     - run: bundle check || bundle install
     - run: bundle exec jekyll build
-    - name: Run htmlproofer
-      run: |
-        bundle exec htmlproofer _site \
-          --check-favicon \
-          --check-html \
-          --disable-external
     - run: bundle exec github-pages health-check
