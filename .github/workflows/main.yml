@@ -15,9 +15,6 @@ jobs:
     env:
       NOKOGIRI_USE_SYSTEM_LIBRARIES: true
     runs-on: macos-latest
-    defaults:
-      run:
-        working-directory: docs
     steps:
     - name: Run checkout
       uses: actions/checkout@v3
