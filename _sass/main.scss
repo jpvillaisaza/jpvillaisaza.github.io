@@ -1,6 +1,4 @@
 :root {
-  --color-cafe-noir: #4b3621;
-  --color-01: var(--color-cafe-noir);
   --color-02: gray;
   --color-03: #0e3232;
 }
@@ -93,7 +91,6 @@ main {
 }
 
 .post-meta {
-  color: var(--color-01);
   font-size: 90%;
 }
 
