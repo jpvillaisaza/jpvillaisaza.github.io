@@ -22,31 +22,10 @@
   <body>
     <header class="site-header">
       <h1 class="site-title">
-        <svg viewBox="0 0 24 24" width="44" height="44">
-          <circle cx="12" cy="12" r="10" fill="#954721" />
-        </svg>
         <a href="/">
           {{ site.title }}
         </a>
       </h1>
-      <nav class="site-nav">
-        <ul>
-          {%- assign nav_pages = site.pages | where: "nav", true %}
-          {%- for nav_page in nav_pages %}
-          <li>
-            {%- if nav_page.url == page.url %}
-            <a href="{{ nav_page.url }}" aria-current="page">
-              {{ nav_page.title }}
-            </a>
-            {%- else %}
-            <a href="{{ nav_page.url }}">
-              {{ nav_page.title }}
-            </a>
-            {%- endif %}
-          </li>
-          {%- endfor %}
-        </ul>
-      </nav>
     </header>
     <main class="page-content">
       {{ content }}
