@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<article class="post" lang="{{ page.lang | default: site.lang }}">
-  <header class="post-header">
+<article lang="{{ page.lang | default: site.lang }}">
+  <header>
     <h2>{{ page.title }}</h2>
-    <div class="post-meta">
+    <div class="text-gray">
       <div>
         {{ page.date | date: "%B %e, %Y" }}
       </div>
@@ -21,25 +21,7 @@ layout: default
       {% endif %}
     </div>
   </header>
-  <div>
+  <div class="mt-3">
     {{ content }}
   </div>
-  <footer class="post-footer">
-    <nav class="post-nav">
-      <div>
-        {% if page.previous %}
-        <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">
-          Previous
-        </a>
-        {% endif %}
-      </div>
-      <div>
-        {% if page.next %}
-        <a href="{{ page.next.url }}" title="{{ page.next.title }}">
-          Next
-        </a>
-        {% endif %}
-      </div>
-    </nav>
-  </footer>
 </article>

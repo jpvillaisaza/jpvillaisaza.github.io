@@ -2,6 +2,7 @@
 title: Where Am I? Geolocation in Elm
 author: Juan Pedro Villa Isaza
 tags: elm programming
+layout: post
 ---
 
 [Elm][elm] is a simple and functional language that compiles to

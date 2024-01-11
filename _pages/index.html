@@ -1,5 +1,6 @@
 ---
 permalink: /
+layout: default
 ---
 
 <p>
@@ -12,14 +13,17 @@ permalink: /
 </p>
 
 <section>
-  <h2>Recent Posts</h2>
-  {% include posts.html posts=site.posts limit=5 %}
-  <p><a href="/posts/">Posts</a></p>
+  <h2>Posts</h2>
+  {% include posts.html posts=site.posts %}
+  <section>
+    <h3>Posts (External)</h3>
+    {% include posts.html posts=site.data.posts.external %}
+  </section>
 </section>
 
 <section>
   <h2>Contact</h2>
   <p>
-    You can send me an email to jp at jpvillaisaza dot co.
+    You can send me an email to jpvillaisaza at gmail dot com.
   </p>
 </section>
