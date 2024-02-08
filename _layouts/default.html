@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <link rel="icon" href="/favicon.svg">
+    <link rel="mask-icon" href="/mask-icon.svg" color="#954721">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>{{ site.title }}</h1>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+    </footer>
+    {%- if jekyll.environment == "production" %}
+    <script async data-goatcounter="https://jpvillaisaza.goatcounter.com/count" src="//gc.zgo.at/count.js"></script>
+    {%- endif %}
+  </body>
+</html>
