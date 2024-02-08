@@ -1,4 +1,4 @@
-title: jpvillaisaza
+title: jpvillaisaza.github.io
 author: Juan Pedro Villa Isaza
 
 permalink: pretty
@@ -11,9 +11,3 @@ exclude:
 - LICENSE.md
 - README.md
 - vendor
-
-include: [_pages]
-
-plugins:
-- jekyll-seo-tag
-- jekyll-sitemap

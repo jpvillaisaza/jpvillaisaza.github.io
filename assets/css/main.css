@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.site-header {
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 64ch;
+  padding: 0 2ch;
+}
+
+.post-meta {
+  color: gray;
+  font-size: smaller;
+}

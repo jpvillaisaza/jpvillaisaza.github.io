@@ -5,7 +5,7 @@ layout: default
 <article lang="{{ page.lang | default: site.lang }}">
   <header>
     <h2>{{ page.title }}</h2>
-    <div class="text-gray">
+    <div class="post-meta">
       <div>
         {{ page.date | date: "%B %e, %Y" }}
       </div>
@@ -14,14 +14,7 @@ layout: default
         {{ page.tags | sort | join: ", " }}
       </div>
       {% endif %}
-      {% if jekyll.environment == "development" %}
-      <div>
-        {{ content | strip_html | number_of_words | append: " words" }}
-      </div>
-      {% endif %}
     </div>
   </header>
-  <div class="mt-3">
-    {{ content }}
-  </div>
+  {{ content }}
 </article>
