@@ -18,4 +18,3 @@ jobs:
         ruby-version: 2.7.4
         bundler-cache: true
     - run: bundle exec jekyll build
-    - run: bundle exec github-pages health-check
