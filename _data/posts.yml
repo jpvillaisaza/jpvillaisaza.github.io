@@ -1,46 +1,59 @@
-external:
-  - date: 2014-12-16
-    title: "The Weak and the Strong: Functors"
-    url: https://www.stackbuilders.com/news/the-weak-and-the-strong-functors
-  - date: 2015-02-19
-    title: "Obverse and Reverse"
-    url: https://www.stackbuilders.com/news/obverse-and-reverse
-  - date: 2015-05-18
-    title: "The Notes of GHC"
-    url: https://www.stackbuilders.com/news/the-notes-of-ghc
-  - date: 2015-05-25
-    title: "Pattern Matching: Wot's... Uh the Deal?"
-    url: https://www.stackbuilders.com/news/pattern-matching-wot-s-uh-the-deal
-  - date: 2015-06-01
-    title: "Hangman: Imperative functional programming"
-    url: https://www.stackbuilders.com/news/hangman-imperative-functional-programming
-  - date: 2015-06-08
-    title: "How to Program It"
-    url: https://www.stackbuilders.com/news/how-to-program-it
-  - date: 2015-06-15
-    title: "Obverse versus Reverse: Benchmarking in Haskell with Criterion"
-    url: https://www.stackbuilders.com/news/obverse-versus-reverse-benchmarking-in-haskell-with-criterion
-  - date: 2015-07-29
-    title: "Dr. Hakyll: Create a GitHub page with Hakyll and CircleCI"
-    url: https://www.stackbuilders.com/news/dr-hakyll-create-a-github-page-with-hakyll-and-circleci
-  - date: 2015-08-03
-    title: "Errors and Exceptions in Haskell"
-    url: https://www.stackbuilders.com/news/errors-and-exceptions-in-haskell
-  - date: 2015-08-31
-    title: "The Hang of Elm: Hangman and functional programming with Elm"
-    url: https://www.stackbuilders.com/news/the-hang-of-elm-hangman-and-functional-programming-with-elm
-  - date: 2015-09-21
-    title: "A QuickCheck Tutorial: Generators"
-    url: https://www.stackbuilders.com/news/a-quickcheck-tutorial-generators
-  - date: 2015-09-28
-    title: "Reverse, Reverse: Theorem proving with Idris"
-    url: https://www.stackbuilders.com/news/reverse-reverse-theorem-proving-with-idris
-  - date: 2016-05-31
-    title: "CSV Encoding and Decoding in Haskell with Cassava"
-    url: https://www.stackbuilders.com/tutorials/haskell/csv-encoding-decoding/
-  - date: 2020-04-16
-    title: "Nonsense! Getting started with Reason and ReasonReact"
-    url: https://www.stackbuilders.com/tutorials/reason/nonsense-getting-started-with-reason-and-reason-react/
-  - date: 2021-05-26
-    title: Getting started with Haskell projects using Scotty
-    url: https://www.stackbuilders.com/tutorials/haskell/getting-started-with-haskell-projects-using-scotty/
+- date: 2014-12-16
+  title: "The weak and the strong: Functors"
+  url: https://www.stackbuilders.com/blog/the-weak-and-the-strong-functors/
+
+- date: 2015-02-19
+  title: "Obverse and reverse"
+  url: https://www.stackbuilders.com/blog/obverse-and-reverse/
+
+- date: 2015-05-18
+  title: "The notes of GHC"
+  url: https://www.stackbuilders.com/blog/the-notes-of-ghc/
+
+- date: 2015-05-25
+  title: "Pattern matching: Wot's... Uh the Deal?"
+  url: https://www.stackbuilders.com/blog/pattern-matching-wots-uh-the-deal/
+
+- date: 2015-06-01
+  title: "Hangman: Imperative functional programming"
+  url: https://www.stackbuilders.com/blog/hangman-imperative-functional-programming/
+
+- date: 2015-06-08
+  title: "How to program it"
+  url: https://www.stackbuilders.com/blog/how-to-program-it/
+
+- date: 2015-06-15
+  title: "Obverse versus reverse: Benchmarking in Haskell with Criterion"
+  url: https://www.stackbuilders.com/blog/obverse-versus-reverse-benchmarking-in-haskell-with-criterion/
+
+- date: 2015-07-29
+  title: "Dr. Hakyll: Create a GitHub page with Hakyll and CircleCI"
+  url: https://www.stackbuilders.com/blog/dr-hakyll-create-a-github-page-with-hakyll-and-circleci/
+
+- date: 2015-08-03
+  title: "Errors and exceptions in Haskell"
+  url: https://www.stackbuilders.com/blog/errors-and-exceptions-in-haskell/
+
+- date: 2015-08-31
+  title: "The hang of Elm: Hangman and functional programming with Elm"
+  url: https://www.stackbuilders.com/blog/the-hang-of-elm-hangman-and-functional-programming-with-elm/
+
+- date: 2015-09-21
+  title: "A QuickCheck tutorial: Generators"
+  url: https://www.stackbuilders.com/blog/a-quickcheck-tutorial-generators/
+
+- date: 2015-09-28
+  title: "Reverse, reverse: Theorem proving with Idris"
+  url: https://www.stackbuilders.com/blog/reverse-reverse-theorem-proving-with-idris/
+
+- date: 2016-05-31
+  title: "CSV encoding and decoding in Haskell with Cassava"
+  url: https://www.stackbuilders.com/blog/csv-encoding-decoding/
+
+- date: 2020-04-16
+  title: "Nonsense! Getting started with Reason and ReasonReact"
+  url: https://www.stackbuilders.com/blog/nonsense-getting-started-with-reason-and-reason-react/
+
+- date: 2021-05-26
+  title: "Getting started with Haskell projects using Scotty"
+  url: https://www.stackbuilders.com/blog/getting-started-with-haskell-projects-using-scotty/
