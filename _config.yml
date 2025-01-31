@@ -5,6 +5,9 @@ permalink: pretty
 lang: en
 timezone: America/Bogota
 
+include:
+- _pages
+
 exclude:
 - Gemfile
 - Gemfile.lock
