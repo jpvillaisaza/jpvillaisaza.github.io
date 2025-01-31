@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="0; url={{ page.redirect }}">
+    <meta name="robots" content="noindex">
+    <title>Redirecting to {{ page.title }}</title>
+    <link rel="canonical" href="{{ page.redirect }}">
+  </head>
+  <body>
+    <main>
+      <h1>Redirecting to {{ page.redirect }}</h1>
+      <p>
+        Click the following link if you were not redirected:
+        <a href="{{ page.redirect }}">
+          {{ page.redirect }}
+        </a>
+      </p>
+    </main>
+    <script>
+      window.location = "{{ page.redirect }}";
+    </script>
+  </body>
+</html>
